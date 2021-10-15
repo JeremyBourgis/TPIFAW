@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <title>TP 1 IFAW</title>
+</head>
+<body>
+
+
+    <h1>TP 1 IFAW</h1>
+
+    <ul>
+        <li><a href="#paragraphe">Menu local</a></li>
+        <li><a href="https://passeport.dauphine.fr/" target="_blank" accesskey="p">Passeport Dauphine</a></li>
+    </ul>
+
+    <img src="http://observatoire-engagement.org/wp-content/uploads/2017/04/logo-part-dauphine.png" alt="Mon image">
+    <p id="paragraphe">Salut c'est le paragraphe, bienvenue sur la page a réaliser pour le TP1 de IFAW</p>
+
+    <form>
+        <label>Name:</label>
+        <input type="text" id="pId" value="Nom" name="name" maxlength="10" size="10"/>
+        
+        <label>Middle:</label>
+        <input type="text" name="middle"/>
+
+        <label>lastName:</label>
+        <input type="text" name="lastName"/>
+
+        <div>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+        </div>
+
+        <div>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+
+        <br>
+
+        <label for="phone">Phone</label>
+        <input type="text" id="phone" name="phone">
+
+        <label for="email" >Email:</label>
+        <input type="email" id="email">
+
+
+        <div>
+        <input type="checkbox" id="contact" name="contact">
+        <label for="contact">Contact ?</label>
+        </div>
+
+        <input type="submit" value="Soumettre">
+        <input type="reset" value="Remettre à zéro">
+        <input type="button" name="btnJS" value="Appel javascript change idname" onclick="changeIdName()">
+        
+   </form> 
+</body>
+</html>
